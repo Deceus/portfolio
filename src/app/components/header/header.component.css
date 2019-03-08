@@ -1,0 +1,102 @@
+#navbar {
+  background: var(--secondary-color);
+  color: #fff;
+  overflow: auto;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+#navbar a {
+  color: #fff;
+}
+
+#navbar .container {
+  display: grid;
+  grid-template-columns: 3fr 4fr 3fr;
+  padding: 1rem;
+  align-items: center;
+  height: 90px;
+}
+
+#navbar .logo {
+  padding-left: 2rem;
+}
+
+#navbar .logo i {
+  color: var(--primary-color);
+}
+
+#navbar .social {
+  justify-self: center;
+}
+
+#navbar .social i {
+  color: var(--primary-color);
+  margin-right: .5rem;
+}
+
+#navbar ul {
+  display: flex;
+  justify-self: end;
+  list-style: none;
+}
+
+#navbar ul li {
+  font-weight: bold;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current {
+  background: var(--primary-color);
+  color: #444;
+}
+
+#showcase {
+  color: #fff;
+  background: var(--dark-color);
+  padding: 2rem;
+  position: relative;
+  height: 100vh;
+  z-index: 1;
+  padding-top: 90px;
+  margin-top: -90px;
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+}
+
+#showcase:before {
+  content: '';
+  background: url("http://gogotraining.com/blog/wp-content/uploads/2016/10/Become-a-Computer-Programmer.jpg") no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+#showcase .lead{
+  margin-top: 2rem;
+}
+
+#showcase .btn{
+  margin-top: 2rem;
+  line-height: 1;
+  font-weight: bold;
+}
