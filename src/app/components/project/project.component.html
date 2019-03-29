@@ -1,25 +1,28 @@
 <section id="projects">
+    <div class="container">
+        <h1 id="project-heading" class="l-heading">My Projects</h1>
+    </div>
     <div id="projects-container" class="container">
         <div id="project1" class="project">
             <a href="https://www.chriscastor.com">
                 <img src="https://i.imgur.com/Bw4YIIb.png" alt="">
             </a>
-            <p>Personal Portfolio Website</p>
-            <p>This is a short description</p>
-            <p>Angular, HTML5, CSS3, </p>
+            <p>My Portfolio: you're looking at it!</p>
         </div>
         <div id="project2" class="project">
-            <a href="https://castor-devconnector.herokuapp.com/profile/Deceus">
+            <a href="https://castor-devconnector.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                 <img src="https://i.imgur.com/ZhiejyP.png" alt="">
             </a>
-            <p>A fullstack MERN social media site</p>
+            <p>DevConnect: A fullstack MERN social media site</p>
         </div>
         <div id="project3" class="project">
-            <img src="https://i.imgur.com/Bw4YIIb.png" alt="">
-            <p>Personal Portfolio Website</p>
+            <a href="https://suspicious-mccarthy-d3b1e1.netlify.com/" target="_blank" rel="noopener noreferrer">
+                <img src="https://i.imgur.com/6XaGIoB.png" alt="">
+            </a>
+            <p>EdgeLedger: a mockup of a local buisiness page. Mainly an exercise in CSS Flexbox</p>
         </div>
     </div>
-    <div id="btn-container" *ngIf = "location == '/home' ">
+    <div id="btn-container" *ngIf="location == '/home' ">
         <a (click)="scrollToTimeline()" class="btn">
             Prev Page <i class="fas fa-arrow-circle-up"></i>
         </a>

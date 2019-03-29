@@ -4,6 +4,14 @@
   color: #f4f4f4;
 }
 
+#project-heading {
+  width: 400px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+}
+
 #projects-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
