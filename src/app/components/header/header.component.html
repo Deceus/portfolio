@@ -1,25 +1,14 @@
 <nav id="navbar">
-  <div class="container">
-    <h1 class="logo"><i class="fab fa-angular"></i><a href="index.html"> Castor Portfolio</a></h1>
-    <div class="social">
-      <a href="https://www.linkedin.com/in/christopher-castor-7a242782/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
-      <a href="http://github.com/deceus" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+    <div class="container">
+        <h1 class="logo"><i class="fab fa-angular"></i><a href="index.html"> Castor Portfolio</a></h1>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/christopher-castor-7a242782/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+            <a href="http://github.com/deceus" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+        </div>
+        <ul>
+            <li><a routerLink="home">Home</a></li>
+            <li><a routerLink="timeline">Timeline</a></li>
+            <li><a routerLink="projects">Projects</a></li>
+        </ul>
     </div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="/">Timeline</a></li>
-      <li><a href="/">Projects</a></li>
-    </ul>
-  </div>
 </nav>
-<header id="showcase">
-  <div class="showcase-content container">
-    <h1 class="l-heading">
-      Welcome, I'm Chris Castor and welcome to my web development portfolio.
-    </h1>
-    <p class="lead">
-      This page was built to highlight and showcase my skills as a developer. Take a look!
-    </p>
-    <button (click)="scrollToTimeline(timeline)" class="btn">Learn More <i class="fas fa-arrow-circle-down"></i></button>
-  </div>
-</header>

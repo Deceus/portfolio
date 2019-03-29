@@ -66,7 +66,7 @@
     </li>
   </ul>
   <div id="btn-container">
-  <a (click)="scrollToShowcase()" class="btn">
+  <a (click)="scrollToShowcase()" class="btn" *ngIf = "location == '/home' ">
     Prev Page <i class="fas fa-arrow-circle-up"></i>
   </a>
 </div>

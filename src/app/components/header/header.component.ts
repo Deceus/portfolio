@@ -11,11 +11,4 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
   }
-
-  scrollToTimeline(): void {
-    const element = document.querySelector('#timeline');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  }
 }

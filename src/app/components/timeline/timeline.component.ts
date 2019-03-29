@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-timeline',
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TimelineComponent implements OnInit {
 
-  constructor() { }
+  public location = '';
+
+  constructor(private router: Router) {
+    this.location = router.url;
+  }
+
 
   ngOnInit() {
     const items = document.querySelectorAll('#timeline li');
