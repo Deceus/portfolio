@@ -17,6 +17,7 @@
   padding: 1rem;
   align-items: center;
   height: 90px;
+  overflow:hidden
 }
 
 #navbar .logo {
@@ -56,4 +57,31 @@
 #navbar ul li a.current {
   background: var(--primary-color);
   color: #444;
+}
+
+@media screen and (max-width: 900px) {
+  #navbar .logo {
+    padding-left: 1rem;
+    font-size: 1.2rem;
+  }
+
+  #navbar .container {
+    grid-template-columns: 3fr 2fr 2fr;
+  }
+
+  #navbar ul li a {
+    padding: 12px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #navbar ul li {display: none;}
+  #navbar .container {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  #navbar .logo {
+    padding-left: 1rem;
+    font-size: 1.4rem;
+  }
 }

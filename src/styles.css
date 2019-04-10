@@ -9,6 +9,7 @@
 }
 
 /* Reset */
+
 * {
    margin: 0;
    padding: 0;
@@ -17,15 +18,15 @@
 
 /* Global */
 
-html,body {
+html, body {
    font-family: Arial, Helvetica, sans-serif;
    line-height: 1.7em;
    background: #333;
- }
- 
- a {
+}
+
+a {
    text-decoration: none;
- }
+}
 
 /* Util */
 
@@ -44,9 +45,23 @@ html,body {
    padding: .5rem 1.5rem;
    z-index: 1;
    transition: all 0.3s ease-in;
- }
- 
- .l-heading{
-    font-size: 3rem;
-    line-height: 1.3;
- }
+}
+
+.l-heading {
+   font-size: 3rem;
+   line-height: 1.3;
+}
+
+@media(max-width: 900px) {
+   .l-heading {
+      font-size: 2rem;
+      line-height: 1.2;
+   }
+}
+
+@media(max-width: 600px) {
+   .l-heading {
+      font-size: 1.5rem;
+      line-height: 1.1;
+   }
+}
