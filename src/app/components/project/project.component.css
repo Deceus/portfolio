@@ -66,4 +66,8 @@
     height: 110%;
     padding-bottom: 2.5rem;
   }
+
+  .project {
+    width: 90%;
+  }
 }
